@@ -1,0 +1,49 @@
+\documentclass{univemaster}
+\author{My name}
+
+\ay{20xx-20xx} % academic year
+\supervisor{My supervisor}
+\title{My thesis title}
+%\teachassistant{The teacher assistant}
+\begin{document}
+
+    \maketitle
+
+	\pagenumbering{roman}
+	
+	\chapter*{Acknowledgments}
+	The main structure of this document has been provided by \href{https://github.com/Cinofix/latex-scientific-templates}{Cinofix}.\\
+	There is not an official template for a master thesis written in LaTex, thus this template with the class ``univemaster''
+	aims to fill this gap.\\
+	The Ca' Foscari University logo is a modified version of the one downloadable from 
+	\href{https://commons.wikimedia.org/wiki/File:Logo_Universit\%C3\%A0_Ca\%27_Foscari_Venezia.svg}{Wikipedia} and all rights belong to Ca' Foscari University of Venice.
+	
+	
+	\chapter*{Abstract}
+    \lipsum[1-3]
+	
+	
+	\paragraph{Keywords} 
+    Lorem ipsum, dolor sit amet, consectetur, adipiscing elit
+	
+	\tableofcontents
+	
+	\clearpage
+	
+	% start arabic page numbering
+    \pagenumbering{arabic}
+    \setcounter{page}{1}
+    
+    % include all the others chapter here, "introduction.tex" and "conclusion.tex" are only examples
+	
+	\include{introduction}
+	
+	\include{conclusions}
+	
+	\bibliographystyle{plainnat}
+	{\footnotesize
+		\bibliography{bibliography}
+	}
+	
+	
+\end{document}
