@@ -9,7 +9,6 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          working_directory: report
           root_file: main.tex
       - name: Create a new release
         id: create_release
@@ -28,6 +27,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./report/main.pdf
+          asset_path: main.pdf
           asset_name: main.pdf
           asset_content_type: application/pdf
