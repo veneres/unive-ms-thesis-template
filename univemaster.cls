@@ -116,7 +116,7 @@ footskip=.35in]{geometry}
         \vspace{0.2 cm}
         \begin{figure}[h!]
         	\centering
-        	\includegraphics[width=0.6\textwidth]{img/logo.png} 
+        	\includegraphics[width=0.6\textwidth]{img/logo} 
         \end{figure}
         \vspace{0.0 cm} Computer Science Master's Thesis\\
         %\vspace{0.0 cm} Thesis notes\\
